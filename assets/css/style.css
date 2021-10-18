@@ -1,0 +1,38 @@
+body{
+    background-color:#519917;
+    
+}
+
+header{
+        background-color:#5069E6;
+        text-align:center;
+        text-shadow:1px 1px#000000;
+        margin-left:20px;
+        margin-right:20px;
+        }
+aside {
+    text-shadow:1px 1px#332010;
+    text-align:center;
+    display:flex;
+    flex-flow:column-reverse;
+    margin-left:120px;
+    margin-right:120px;
+    justify-content:center;
+    background-color:#332010;
+    padding:1px;
+    
+  transition:1.5s;
+}
+nav a{
+    
+    background-color:#332010;
+    border-radius:20px;
+    transition:1.5s;
+}
+nav ul{
+  padding:0;
+  list-style-type:none;
+}
+nav a:hover{
+background-color:rgba(120,157,57,.8);
+}
