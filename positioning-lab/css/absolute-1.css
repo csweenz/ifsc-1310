@@ -1,0 +1,48 @@
+body{
+    background-color:#519917;
+    
+}
+
+.wrapper{
+    background-color:#ffffff;
+}
+
+.red
+{
+    background-color:#ff0000;
+    position:absolute;
+    top:200px;
+    left:200px;
+   
+}
+.green
+{
+    background-color:#00ff00;
+    position:absolute;
+    top:200px;
+    right:200px;
+   
+}
+.blue
+{
+    background-color:#0000ff;
+    position:absolute;
+    bottom:200px;
+    left:200px;
+   
+}
+.purple
+{
+    background-color:#ff00ff;
+    position:absolute;
+    bottom:200px;
+    right:200px;
+   
+}
+.footer
+{
+    background-color:#a0a0a0;
+    position:absolute;
+   
+   
+}

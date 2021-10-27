@@ -1,0 +1,38 @@
+.wrapper{
+    background-color:#ffffff;
+}
+
+.red
+{
+    background-color:#ff0000;
+    float:left;
+   
+}
+.green
+{
+    background-color:#00ff00;
+    float:left;
+   
+}
+.blue
+{
+    background-color:#0000ff;
+    float:left;
+   
+}
+.purple
+{
+    background-color:#ff00ff;
+    float:right;
+    
+    bottom:200px;
+    right:200px;
+   
+}
+.footer
+{
+    background-color:#a0a0a0;
+    float:none;
+   
+   
+}
