@@ -18,10 +18,10 @@ body {
 }
 #wrapper {
 	background-color: #FFF;
-	border-top-width: 1px;
-	border-right-width: 1px;
-	border-bottom-width: 1px;
-	border-left-width: 1px;
+	border-top-width: 100px;
+	border-right-width: 100px;
+	border-bottom-width: 100px;
+	border-left-width: 100px;
 	border-top-style: solid;
 	border-right-style: solid;
 	border-bottom-style: solid;
@@ -33,29 +33,34 @@ body {
 #red {
 	background-color: #900;
 	float:left;
-	top:200px;
-	padding:200px;
+	margin:10px;
+	padding:150px;
 	
 	
 }
 #green {
 	background-color: #090;
-	float:right;
-	top:200px;
-}
-#blue {
-	background-color: #00F;
 	float:left;
-	top:-200px;
+	margin:10px;
+	padding:150px;
 }
 #purple {
 	background-color: #63C;
 	float:right;
-	top:-200px;
+	margin:10px;
+	padding:150px;
 }
+#blue {
+	background-color: #00F;
+	float:right;
+	margin:10px;
+	padding:150px;
+}
+
 #footer {
 	background-color: #666;
-	float:inherit;
+	clear:both;
+	
 	
 }
 h1 {
@@ -70,8 +75,6 @@ h1 {
 <h1>Float Exercise 2</h1>
 <div id="wrapper">
   <div id="red">Red</div>
-  </br>
-  </br>
   <div id="green">Green</div>
   <div id="blue">Blue</div>
   <div id="purple">Purple</div>
