@@ -11,21 +11,21 @@ header{
         margin-right:20px;
         }
 aside {
-    text-shadow:1px 1px#332010;
+    text-shadow:1px 1px#442f1f;
     text-align:center;
     display:flex;
     flex-flow:column-reverse;
     margin-left:120px;
     margin-right:120px;
     justify-content:center;
-    background-color:#332010;
+    background-color:#442f1f;
     padding:1px;
     
   transition:1.5s;
 }
 nav a{
     
-    background-color:#332010;
+    background-color:#442f1f;
     border-radius:20px;
     transition:1.5s;
 }
