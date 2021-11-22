@@ -80,7 +80,7 @@ nav{
         left: 0;
         width: 225px;
         position: absolute;
-        background-color: #23174D
+        background-color: #23174D;
         }
 /*#dragon1 {
   background-image: url("/../img/dragonv201.png");
@@ -116,7 +116,7 @@ nav{
   padding: 1%;
   background:#696280;
   margin-top:20px;
-  margin-right:40px;
+  margin-right:1px;
   border-radius:10px;
   box-shadow: 0px 55px 60px 0px rgba(0, 0, 0, 0.27);
   transition:1s;
