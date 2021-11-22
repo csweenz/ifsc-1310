@@ -31,11 +31,18 @@ display: flex;
 }
 
 h1{
-    text-align:center;
-    padding-right:50px;
+    width: 200px;
+    height: 25px;
+    background-image: url("../img/spacex_logo2.png");
+    background-position:center;
+    background-repeat: no-repeat;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
 }
 
-@media screen and (max-width : 900px){
+@media screen and (max-width : 480px){
     
 nav{
         display: flex;
@@ -64,7 +71,7 @@ nav{
 
 
 }
-@media screen and (min-width : 900px) {
+@media screen and (min-width : 480px) {
     .primary{
         top: 0;
         left: 0;
@@ -72,6 +79,13 @@ nav{
         position: absolute;
         background-color: #23174D
     }
+    #colophon{
+        bottom: 150;
+        left: 0;
+        width: 225px;
+        position: absolute;
+        background-color: #23174D
+        }
  
 body{
         border-left: 250px solid #23174D;

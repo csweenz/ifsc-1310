@@ -15,8 +15,8 @@ aside {
     text-align:center;
     display:flex;
     flex-flow:column-reverse;
-    margin-left:120px;
-    margin-right:120px;
+    margin-left:12px;
+    margin-right:12px;
     justify-content:center;
     background-color:#442f1f;
     padding:1px;
@@ -28,6 +28,7 @@ nav a{
     background-color:#442f1f;
     border-radius:20px;
     transition:1.5s;
+    
 }
 nav ul{
   padding:0;

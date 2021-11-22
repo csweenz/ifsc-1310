@@ -5,7 +5,6 @@
 
  
 .shine {
-    // background: red;
     text-align:center;
     padding-right:250px;
     top: 0;
@@ -23,23 +22,30 @@ display: flex;
   padding: 1%;
   background:#696280;
   margin-top:20px;
-  margin-right:45px;
   border-radius:10px;
   box-shadow: 0px 55px 60px 0px rgba(0, 0, 0, 0.27);
   transition:1s;
 }
 
 h1{
-    text-align:center;
-    padding-right:50px;
+    width: 200px;
+    height: 25px;
+    background-image: url("../img/spacex_logo2.png");
+    background-position:center;
+    background-repeat: no-repeat;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
 }
 
-@media screen and (max-width : 900px){
-    
+
+@media screen and (max-width : 480px){
 nav{
         display: flex;
   flex-wrap: wrap;
   align-items: center;
+  flex-direction: row;
   padding: 1%;
   background:#696280;
   margin-top:20px;
@@ -55,23 +61,28 @@ nav{
   padding: 1%;
   background:#696280;
   margin-top:20px;
-  margin-right:45px;
+  margin-right:40px;
   border-radius:10px;
   box-shadow: 0px 55px 60px 0px rgba(0, 0, 0, 0.27);
   transition:1s;
     }
-
-
 }
-@media screen and (min-width : 900px) {
-    .primary{
+@media screen and (min-width : 480px) {
+.primary{
         top: 0;
         left: 0;
-        width: 250px;
+        width: 225px;
         position: absolute;
         background-color: #23174D
-    }
-#dragon1 {
+        }
+   #colophon{
+        bottom: 150;
+        left: 0;
+        width: 225px;
+        position: absolute;
+        background-color: #23174D
+        }
+/*#dragon1 {
   background-image: url("/../img/dragonv201.png");
 }
 #dragon2 {
@@ -79,10 +90,10 @@ nav{
 }
 #dragon3 {
   background-image: url("/../img/dragon_in_space.png");  
-}
+}*/
  
 body{
-        border-left: 250px solid #23174D;
+        border-left: 225px solid #23174D;
     }
     
 
@@ -103,40 +114,11 @@ nav{
   flex-wrap: wrap;
   align-items: center;
   padding: 1%;
-  /*background:#696280;*/
+  background:#696280;
   margin-top:20px;
-  margin-right:45px;
+  margin-right:40px;
   border-radius:10px;
   box-shadow: 0px 55px 60px 0px rgba(0, 0, 0, 0.27);
   transition:1s;
     }
-
-    
 }
-
-
-
-
-/*element.style {
-}
-section#articles {
-    background: #181c1f;
-}
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-user agent stylesheet
-section {
-    display: block;
-}
-body {
-    font-family: "Lato", sans-serif;
-    margin: 0;
-}
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
-*, *:before, *:after {
-    box-sizing: inherit;
-}*/
