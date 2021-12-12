@@ -1,0 +1,84 @@
+
+Client: SPACEX
+Founder: Elon Musk
+
+Product: Dragon
+
+Company Background:
+
+SpaceX designs, manufactures and launches advanced rockets and spacecraft. The company was founded in 2002 to revolutionize space technology, with the ultimate goal of enabling people to live on other planets.
+
+
+Home Page (index.html)
+————————————————————————————————————
+Dragon Vehicle Overview:
+
+
+Configurations:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+History (history.html)
+————————————————————————————————————
+
+
+
+
+
+
+Recent Missions
+Launch Date | Customer | Launch Site | Vehicle
+9/7/2017 | U.S. AIR FORCE (OTV-5) | CAPE CANAVERAL
+8/24/2017 | NATIONAL SPACE ORGANIZATION (TAIWAN) | VANDENBERG | FALCON 9 
+7/5/2017 | INTELSAT | CAPE CANAVERAL | FALCON 9
+6/25/2017 | IRIDIUM (FLIGHT 2) | VANDENBERG | FALCON 9 
+6/23/2017 | BULGARIASAT-1 | CAPE CANAVERAL | FALCON 9 
+6/3/2017 | NASA RESUPPLY TO ISS (FLIGHT 11) | CAPE CANAVERAL | DRAGON  & FALCON 9 
+
+
+
+Frequently Asked Questions (faqs.html)
+————————————————————————————————————
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Technically, yes. But economically, it isn't feasible. The problem of the absence of an airlock can be solved by simply venting the entire cabin. That's how it was done in Gemini and Apollo. But in reality, it's not practical. It would be cheaper to build and launch a new Hubble than to design and build the needed extra hardware to now service it. As a bonus, you'd get a lot better telescope as Hubble hardware is fairly ancient by modern standards. 
+
+
+
+

@@ -1,0 +1,625 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <title>Web Project Starter</title>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Space X demo project for Web Dev course" />
+  <meta name="author" content="Chris Sweeney" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,900;1,200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+ 
+<style>
+/* Color Theme  
+ #191606 
+ #23174D - Base
+ #A2A341 
+ #9E41BA
+ #5EB03E
+
+*/
+
+/* ---------------Box Sizing----------------- */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* ----- Utility Styles ---- */
+
+.container {
+  width: 80vw;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.img-right {
+  float: right;
+  margin: 10px 0 10px 20px;
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}
+
+.img-left {
+  float: left;
+  margin: 10px 20px 10px 0;
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}
+
+.img-center {
+  display: block;
+  margin: 20px auto;
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}
+
+/* ---- Responsive Images ----*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ----- Global Styles ---- */
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+header.primary {
+  background-color: #181c1f;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px #000000;
+  /* Shorhand T,R,B,L*/
+  padding: 6em 2em;
+  position: relative;
+}
+
+header.primary::before {
+  content: "";
+  background-image: url("https://assets.codepen.io/7248/dragon-in-space.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.4;
+}
+
+header.primary h1 {
+  font-size: 3.2rem;
+  margin: 20px 0;
+  position: relative;
+}
+
+header.primary h1 a {
+  color: #ffffff;
+  background-image: url("https://assets.codepen.io/7248/logo-2.png");
+  display: block;
+  width: 450px;
+  height: 70px;
+  margin: 0 auto;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+header.primary h2 {
+  font-family: "Goldman", cursive;
+  font-size: 2em;
+  /* Shorhand Three Value Top, Left/Right, Bottom*/
+  margin: 20px auto 40px;
+  position: relative;
+}
+
+header.primary nav ul {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+header.primary nav li {
+  list-style-type: none;
+  padding: 0;
+  width: 20%;
+}
+
+header.primary nav a:link,
+header.primary nav a:visited {
+  color: white;
+  text-decoration: none;
+  background-color: #000000;
+  background-color: rgba(142, 166, 184, 0.4);
+  padding: 8px 16px;
+  border-radius: 10px;
+  transition: 0.6s;
+  display: block;
+}
+
+header.primary nav a:hover,
+header.primary nav a:active {
+  background-color: rgba(51, 83, 107, 0.8);
+}
+
+
+
+/* ------------- Content --------------- */
+
+section#content {
+  padding: 4em 0;
+}
+
+section#content h3{
+  font-family: "Goldman", cursive;
+  font-size: 1.2em;
+  color: #33536b;
+  border-bottom: 1px solid #c0c0c0;
+}
+
+section#content table{
+  width:100%;
+  border: 1px solid #c0c0c0;
+  border-collapse:collapse;
+}
+
+section#content caption{
+  font-weight:bold;
+  font-size:1.5rem;
+  margin:10px;
+  font-family: "Goldman", cursive;
+  font-size: 2em;
+  color: #33536b;
+}
+
+section#content th {
+  background:#181C1F;
+  color:#ffffff;
+  text-align:left;
+  padding:10px;
+}
+
+section#content td{
+  border:1px solid #c0c0c0;
+  padding:5px;
+}
+
+section#content tr:nth-child(even){
+  background:#DCDCDC;
+}
+
+section#content tr:hover{
+  background:#8EA6B8;
+}
+
+/* ------------- Articles --------------- */
+
+section#articles {
+  background: #181c1f;
+}
+
+section#articles .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #c0c0c0;
+  padding: 0 0 4em 0;
+}
+
+section#articles h2,
+#content h2 {
+  flex: 0 0 100%;
+  color: #33536b;
+  text-align: center;
+  font-family: "Goldman", cursive;
+  font-size: 2em;
+}
+
+section#articles h2 {
+  color: #fff;
+  text-shadow: 2px 2px #000;
+}
+
+#articles article.post {
+  width: 30%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  transition: 0.6s;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  background: #fff;
+}
+
+#articles article.post h2 {
+  font-size: 1.5em;
+  text-shadow: none;
+}
+
+#articles article.post:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+#articles article time,
+#articles article figcaption,
+#articles article footer {
+  font-size: 0.8em;
+  color: #c0c0c0;
+  text-transform: uppercase;
+}
+
+#articles .post a:link,
+#articles .post a:visited {
+  color: #3b638b;
+}
+
+#articles .post figure {
+  margin: 0;
+}
+
+#articles .post img {
+  border-radius: 10px;
+}
+
+#articles ul {
+  padding: 0 20px;
+}
+#articles li {
+  margin-bottom: 20px;
+}
+
+/* ------------- Hero --------------- */
+
+#hero {
+  padding: 4em 0;
+}
+
+/* ------------- Aside --------------- */
+
+/* Attribute Selector */
+aside[role="complementary"] {
+  background-color: #181c1f;
+  color: #ffffff;
+  padding: 2.5em;
+}
+
+aside .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+aside article.widget {
+  width: 40%;
+}
+
+.widget.overview table {
+  font-size: 0.7em;
+  border-collapse: collapse;
+}
+
+.widget.overview table td {
+  border-bottom: 1px solid #fff;
+  padding: 10px;
+}
+
+.widget.overview table td:nth-child(even) {
+  text-align: right;
+}
+
+aside article a:link,
+aside article a:visited {
+  color: #ffffff;
+  display: block;
+  margin-top: 1.2em;
+  letter-spacing: 1.2px;
+}
+
+aside article a:hover,
+aside article a:active {
+  text-decoration: none;
+}
+
+aside article footer {
+  display: none;
+}
+
+/*------ Footer ------*/
+
+footer#colophon {
+  background-color: #1b2c38;
+}
+
+#colophon h6 {
+  padding: 20px;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+#colophon h6 a:link,
+#colophon h6 a:visited {
+  color: #fff;
+}
+
+/* ---------------Media Queries----------------- */
+
+@media screen and (max-width: 600px) {
+  header.primary nav ul {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 400px;
+  }
+
+  header.primary nav ul li {
+    margin-bottom: 10px;
+    width: 400px;
+  }
+
+  header.primary nav ul li a {
+    display: block;
+  }
+
+  section#articles .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #c0c0c0;
+    padding: 0 0 4em 0;
+  }
+
+  #articles article.post {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+}
+</style>
+
+  
+  
+  
+  
+
+</head>
+
+<body translate="no" >
+  <!--
+
+---Structure---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SpaceX Dragon</title>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Space X Dragon" />
+  <meta name="author" content="Thomas Wallace" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header role="banner" class="primary"></header>
+  <section id="content" class="container"></section>
+  <section id="articles"></section>
+  <section id="hero" class="container"></section>
+  <aside role="complementary"></aside>
+  <footer id="colophon" role="contentinfo"></footer>
+</body>
+</html>
+
+--- FAQ --- 
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>Could SpaceX send a Dragon to the Moon?</h3>
+<p>The Dragon could easily be sent to lunar orbit, but would not be able to land. The Falcon Heavy can throw about 16,000 kilograms (when configured to be expendable) on a trans-lunar injection orbit, so it can send a Dragon 2 capsule to the moon with quite a lot of margin. However, in order to land on a surface you need to slow down from orbital velocity, which requires you to change your velocity by a certain amount (which is called your ∆V, literally "change in velocity"). Dragon 2 carries only a small amount of propellant and can only deliver a small amount of ∆V because of that. The exact amount is less than 500m/s, which doesn't come close to the ~1870 m/s needed to land on the moon. It may be possible to do it with two FH launches but that would require additional technology development.</p>
+
+<h3>What is Red Dragon?</h3>
+<p>Red Dragon is a proposed NASA/SETI Institute mission to send a modified Dragon capsule atop a Falcon Heavy to the Martian surface. The mission would be an unmanned scientific lander, and the heaviest object ever to be placed on Mars - it alone could carry an additional 2 metric tons of cargo and equipment down to the surface. There have been no official announcements about the mission from SpaceX as the mission design architecture is not managed by them, and there is currently no indication that the project will be funded.</p>
+
+<h3>Will the Dragon be used for a manned mission to Mars?</h3>
+<p>No. Dragon is too cramped, and would need significant improvements in the life support system to last throughout the long journey. Elon Musk himself has stated that Dragon 2 can support seven astronauts for "several days".</p>
+
+<h3>Why does the dragon "berth" to the ISS instead of dock?</h3>
+<p>The current version of Dragon physically cannot dock, and can only berth. This is because it has a Common Berthing Mechanism (CBM) port, and not a NASA Docking System (NDS) port. The advantage of the CBM is that it's 50 inch (1270 mm) in diameter, whereas the NDS is only a 800 mm (31.5 inches) wide. The disadvatage of berthing is that it's a tedious process whereby astronauts carefully maneuver the capsule into place using Canadarm, and then physically bolt the CBM ports together. To unberth, the reverse must occur. Docking by contrast is autonomous, and much faster in both directions.</p>
+
+
+
+
+--- History ---
+
+<h2>History</h2>
+
+<p>SpaceX began developing the Dragon spacecraft in late 2004, making a public announcement in 2006 with a plan of entering service in 2009. Also in 2006, SpaceX won a contract to use the Dragon spacecraft for commercially supplied resupply services to the International Space Station for the American federal space agency, NASA.</p>
+
+<p>During its maiden flight in December 2010, Dragon became the first commercially built and operated spacecraft to be recovered successfully from orbit. On 25 May 2012, a cargo variant of Dragon became the first commercial spacecraft to successfully rendezvous with and attach to the International Space Station (ISS). SpaceX is contracted to deliver cargo to the ISS under NASA's Commercial Resupply Servicesprogram, and Dragon began regular cargo flights in October 2012.  With the Dragon spacecraft and the Orbital ATK Cygnus, NASA seeks to increase its partnerships with domestic commercial aviation and aeronautics industry. </p>
+
+<p>On 3 June 2017, the CRS-11 capsule largely assembled from previously flown components from the CRS-4 mission in September 2014 was launched again for the first time, with the hull, structural elements, thrusters, harnesses, propellant tanks, plumbing and many of the avionics reused while the heat shield, batteries and components exposed to sea water upon splashdown for recovery were replaced.</p>
+
+<table>
+<caption>Recent Missions</caption>
+<tr><th scope="col">Launch Date</th><th scope="col">Customer</th><th scope="col">Launch Site</th><th scope="col">Vehicle</th></tr>
+<tr><td>9/7/2017</td><td>U.S. AIR FORCE (OTV-5)</td><td>CAPE CANAVERAL</td><td>FALCON 9</td></tr>
+<tr><td>9/7/2017</td><td>U.S. AIR FORCE (OTV-5)</td><td>CAPE CANAVERAL</td><td>FALCON 9</td></tr>
+<tr><td>9/7/2017</td><td>U.S. AIR FORCE (OTV-5)</td><td>CAPE CANAVERAL</td><td>FALCON 9</td></tr>
+<tr><td>9/7/2017</td><td>U.S. AIR FORCE (OTV-5)</td><td>CAPE CANAVERAL</td><td>FALCON 9</td></tr>
+<tr><td>9/7/2017</td><td>U.S. AIR FORCE (OTV-5)</td><td>CAPE CANAVERAL</td><td>FALCON 9</td></tr>
+<tr><td>9/7/2017</td><td>U.S. AIR FORCE (OTV-5)</td><td>CAPE CANAVERAL</td><td>FALCON 9</td></tr>
+</table>
+
+
+
+
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Web Project Starter</title>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Keyword rich narrative on site purpose" />
+  <meta name="author" content="Thomas Wallace" />
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header role="banner" class="primary">
+    <h1><a href="index.html">SpaceX Dragon</a></h1>
+    <h2>First Private Spacecraft to the Space Station</h2>
+    <nav role="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="content" class="container">
+    <h2>First Private Spacecraft to the Space Station</h2>
+    <p>Dragon is a free-flying spacecraft designed to deliver both cargo and people to orbiting destinations. Dragon made history in 2012 when it became the first commercial spacecraft in history to deliver cargo to the International Space Station and safely return cargo to Earth, a feat previously achieved only by governments. </p>
+    <p>It is the only spacecraft currently flying that is capable of returning significant amounts of cargo to Earth. Currently Dragon carries cargo to space, but it was designed from the beginning to carry humans. Under an agreement with NASA, SpaceX is now developing the refinements that will enable Dragon to fly crew. Dragon's first manned test flight is expected to take place as early as 2018.</p>
+
+  </section>
+  <section id="articles">
+    <div class="container">
+    <h2>Configurations</h2>
+    <article class="post">
+      <header>
+        <figure>
+          <img src="https://assets.codepen.io/7248/capsule-2.jpg" alt="capsule"/>
+          <figcaption>Crew Closeup</figcaption>
+        </figure>
+        <h2> <a href="#" rel="bookmark" title="link to this post">Cargo</a> </h2>
+        <p>Resupply the Space Station</p>
+      </header>
+      <ul>
+        <li>DELIVERY AND RETURN SERVICES - Dragon is the first commercial spacecraft to deliver cargo to the International Space Station and currently the only cargo spacecraft flying capable of returning significant amounts of cargo to Earth. Dragon accommodates pressurized cargo in the capsule as well as unpressurized cargo in its trunk.</li>
+        <li>VERSATILE CARGO RACKS - The racks are a honeycomb carbon-aluminum construction designed for efficient packing in a zero-gravity environment. They accommodate a variety of standard-size NASA cargo bags as well as freezers for carrying materials such as biological samples.</li>
+      </ul>
+    </article>
+    <article class="post">
+      <header>
+        <figure>
+          <img src="https://assets.codepen.io/7248/capsule-1.jpg" alt="capsule" />
+          <figcaption>Crew Exterior</figcaption>
+        </figure>
+        <h2> <a href="#" rel="bookmark" title="link to this post">Crew</a> </h2>
+        <p>Crew Cabin</p>
+      </header>
+      <ul>
+       <li>PARTNERSHIP WITH NASA - Dragon was designed from the outset to fly humans to space. Under an agreement with NASA, SpaceX is making upgrades to Dragon to allow for crew carrying capability.</li>
+<li>CREW UPGRADES - Dragon will be the world’s safest and most reliable crew transport vehicle, with seating for seven, life-support systems, controls with manual capability, and a powered launch escape system.</li>
+<li>FIRST LAUNCH - Upgrades to Dragon are currently in progress. Dragon’s first manned test flight is expected to take place as early as 2018.</li>
+      </ul>
+    </article>
+    <article class="post">
+      <header>
+        <figure>
+          <img src="https://assets.codepen.io/7248/capsule-3.jpg" alt="capsule" />
+          <figcaption>Image Caption</figcaption>
+        </figure>
+        <h2> <a href="#" rel="bookmark" title="link to this post">Dragon Lab</a> </h2>
+        <p>A FREE-FLYING MICROGRAVITY LABORATORY</p>
+      </header>
+      <ul>
+        <li>FACILITATING RESEARCH - DragonLab is a free-flying, unmanned platform designed for research and testing in a microgravity environment independent of the International Space Station.</li>
+<li>LONGEVITY - It can transport payloads, experiments, instruments, and sensors into space and back to Earth on missions ranging from one week to two years.</li>
+<li>CAPABILITIES - DragonLab can readily accommodate instrument and sensor testing, space physics and relativity experiments, radiation effects research, and many other microgravity tests.</li>
+      </ul>
+    </article>
+      </div>
+  </section>
+  <section id="hero" class="container">
+    <img src="https://assets.codepen.io/7248/dragon_2_hover_test.jpg" alt="Hover Test" class="img-center" />
+  </section>
+  
+  <aside role="complementary">
+    <div class="container">
+      <article class="widget">
+        <header>
+          <h2>Background</h2>
+        </header>
+        <p>SpaceX designs, manufactures and launches advanced rockets and spacecraft. The company was founded in 2002 to revolutionize space technology, with the ultimate goal of enabling people to live on other planets.</p>
+        <p>
+          The Dragon spacecraft is capable of carrying up to 7 passengers to and from Earth orbit, and beyond. It is the only spacecraft currently flying that is capable of returning significant amounts of cargo to Earth, and is the first private spacecraft to take humans to the space station.
+        </p>
+        <footer>Widget Footer</footer>
+      </article>
+      <article class="widget overview">
+        <header>
+          <h2>Overview</h2>
+        </header>
+        <table>
+  <tbody>
+    <tr>
+      <td>HEIGHT</td>
+      <td>8.1 m <span>/ 26.7 ft</span></td>
+    </tr>
+    <tr>
+      <td>DIAMETER</td>
+      <td>4 m <span>/ 13 ft</span></td>
+    </tr>
+    <tr>
+      <td>CAPSULE VOLUME</td>
+      <td>9.3 m³ <span>/ 328 ft³ </span></td>
+    </tr>
+    <tr>
+      <td>TRUNK VOLUME</td>
+      <td>37 m³ <span>/ 1300 ft³ </span></td>
+    </tr>
+    <tr>
+      <td>LAUNCH PAYLOAD MASS</td>
+      <td>6,000 kg <span>/ 13,228 lbs</span></td>
+    </tr>
+    <tr>
+      <td>RETURN PAYLOAD MASS</td>
+      <td>3,000 kg <span>/ 6,614 lbs</span></td>
+    </tr>
+  </tbody>
+</table>
+        <footer>Widget Footer</footer>
+      </article>
+    </div>
+  </aside>
+  <footer id="colophon" role="contentinfo">
+    <h6>&copy; 2022 SpaceX | <a href="/cdn-cgi/l/email-protection#dfabaca8beb3b3bebcba9faabeb3adf1babbaa"> Report a Problem</a><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src ="https://form.jotform.com/static/feedback2.js" type="text/javascript"></script><script type="text/javascript"> var JFL_203214237986155 = new JotformFeedback({ formId: '203214237986155', base: 'https://form.jotform.com/', windowTitle: 'Responsive Contact Form - Default Theme', background: '#FFA500', fontColor: '#FFFFFF', type: 'false', height: 500, width: 700, openOnLoad: false }); </script> <a class="btn lightbox-203214237986155" style="margin-top: 16px"> Responsive Contact Form - Default Theme </a></h6>
+  </footer>
+</body>
+</html>
+  
+  
+  
+  
+
+</body>
+
+</html>
+ 
